@@ -1,0 +1,15 @@
+[2019-06-11T19:39:36.372] [ERROR] cheese - { code: 404 }
+[2019-06-11T19:40:46.085] [ERROR] cheese - { code: 404 }
+[2019-06-11T19:41:11.907] [ERROR] cheese - { code: 404 }
+[2019-06-11T19:53:23.400] [ERROR] cheese - { code: 404 }
+[2019-06-11T20:01:22.482] [ERROR] cheese - TypeError: Cannot read property 'country' of undefined
+    at Store.setList (main.d878c93df6fc590846bf.js:1:2526)
+    at wrappedMutationHandler (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:727:13)
+    at commitIterator (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:393:7)
+    at Array.forEach (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:392:11
+    at Store._withCommit (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:523:3)
+    at Store.commit (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:391:8)
+    at boundCommit (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:336:19)
+    at Store.getList (main.d878c93df6fc590846bf.js:1:2455)
+    at <anonymous>
