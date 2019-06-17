@@ -1,15 +1,590 @@
-[2019-06-11T19:39:36.372] [ERROR] cheese - { code: 404 }
-[2019-06-11T19:40:46.085] [ERROR] cheese - { code: 404 }
-[2019-06-11T19:41:11.907] [ERROR] cheese - { code: 404 }
-[2019-06-11T19:53:23.400] [ERROR] cheese - { code: 404 }
-[2019-06-11T20:01:22.482] [ERROR] cheese - TypeError: Cannot read property 'country' of undefined
-    at Store.setList (main.d878c93df6fc590846bf.js:1:2526)
-    at wrappedMutationHandler (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:727:13)
-    at commitIterator (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:393:7)
-    at Array.forEach (<anonymous>)
-    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:392:11
-    at Store._withCommit (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:523:3)
-    at Store.commit (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:391:8)
-    at boundCommit (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vuex/dist/vuex.common.js:336:19)
-    at Store.getList (main.d878c93df6fc590846bf.js:1:2455)
+[2019-06-17T17:31:08.679] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78634
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78106
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81641)
+[2019-06-17T17:32:45.872] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78634
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78106
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81641)
+[2019-06-17T17:32:49.372] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78634
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78106
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81641)
+[2019-06-17T17:32:57.119] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78634
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78106
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81641)
+[2019-06-17T17:33:04.050] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T17:33:11.963] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T17:33:17.445] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T17:33:33.264] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T17:33:38.375] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T17:35:58.106] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.b53313582a1bf745d2bf.js:1:3272
+    at e.createStore (src/store.js:23:21)
+    at e.createApp (src/app.js:17:6)
+    at main.b53313582a1bf745d2bf.js:1:1539
+    at new Promise (<anonymous>)
+    at t.exports (src/entry-server.js:6:25)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T17:37:39.746] [ERROR] cheese - { code: 404 }
+[2019-06-17T17:39:50.321] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
     at <anonymous>
+[2019-06-17T17:40:10.051] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T18:29:44.555] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T18:30:21.658] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T18:30:22.454] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T18:38:04.204] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.9aa636056101d4bfcc20.js:583:9
+    at module.exports../src/store.js.exports.createStore (src/store.js:13:0)
+    at module.exports../src/app.js.exports.createApp (src/app.js:9:0)
+    at main.9aa636056101d4bfcc20.js:420:22
+    at new Promise (<anonymous>)
+    at module.exports../src/entry-server.js.module.exports (src/entry-server.js:5:0)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T18:38:59.192] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.9aa636056101d4bfcc20.js:583:9
+    at module.exports../src/store.js.exports.createStore (src/store.js:13:0)
+    at module.exports../src/app.js.exports.createApp (src/app.js:9:0)
+    at main.9aa636056101d4bfcc20.js:420:22
+    at new Promise (<anonymous>)
+    at module.exports../src/entry-server.js.module.exports (src/entry-server.js:5:0)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9340:43
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9337:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+[2019-06-17T18:42:19.087] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T18:43:30.197] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T18:43:40.541] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T18:44:04.707] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T18:48:02.507] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T18:48:14.923] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T18:48:39.054] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8638:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T18:50:06.612] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T18:55:21.150] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8248:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8398:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8369:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8280:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8642:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8273:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8644:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9169:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9535:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T18:55:45.535] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8248:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8398:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8369:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8280:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8642:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8273:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8644:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9169:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9535:22
+    at <anonymous>
+[2019-06-17T18:59:02.426] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8248:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8398:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8369:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8280:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8642:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8273:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8644:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9169:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9535:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T18:59:25.091] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8248:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8398:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8369:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8280:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8642:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8273:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8644:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9169:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9535:22
+    at <anonymous>
+[2019-06-17T19:10:40.946] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8248:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8398:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8369:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8280:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8642:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8273:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8644:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9169:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9535:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T19:11:23.567] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8248:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8398:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8369:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8280:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8642:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8273:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8644:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9169:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9535:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T19:36:28.490] [ERROR] cheese - TypeError: Cannot read property 'url' of null
+    at handleError (/Users/jack/code/myweb/vue-ssr-demo/server.js:64:13)
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:88:5)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9184:17)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+[2019-06-17T19:37:21.088] [ERROR] cheese - TypeError: Cannot read property 'url' of null
+    at handleError (/Users/jack/code/myweb/vue-ssr-demo/server.js:64:13)
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:88:5)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9184:17)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+[2019-06-17T19:37:46.421] [ERROR] cheese - TypeError: Cannot read property 'url' of null
+    at handleError (/Users/jack/code/myweb/vue-ssr-demo/server.js:64:13)
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:88:5)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9184:17)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+[2019-06-17T19:40:54.392] [ERROR] cheese - TypeError: ctx.body is not a function
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:90:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9184:17)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+[2019-06-17T19:40:54.394] [ERROR] cheese - TypeError: ctx.body is not a function
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:90:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9187:15)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+[2019-06-17T19:40:54.473] [ERROR] cheese - TypeError: ctx.body is not a function
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:90:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9184:17)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+[2019-06-17T19:40:54.490] [ERROR] cheese - TypeError: ctx.body is not a function
+    at renderer.renderToString (/Users/jack/code/myweb/vue-ssr-demo/server.js:90:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9536:15
+    at RenderContext.done (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9187:15)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2588:19)
+    at RenderContext.cachedWrite [as write] (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2602:25)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderStringNode$1 (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8486:5)
+    at RenderContext.renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8277:5)
+    at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
+    at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
+    at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8281:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+[2019-06-17T19:51:56.376] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T19:52:21.683] [ERROR] cheese - { code: 404 }
+[2019-06-17T19:52:50.429] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T19:52:53.492] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T19:52:54.498] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+[2019-06-17T19:58:10.921] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T19:59:13.747] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T20:01:28.958] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at Qi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:66747)
+    at io (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70620)
+    at ro (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:70270)
+    at eo (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67517)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71126
+    at Yi (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:67227)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:71110
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:80014)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81701
+    at <anonymous>
+[2019-06-17T20:01:54.514] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T20:03:08.681] [ERROR] cheese - TypeError: createApp is not a function
+    at Promise (src/entry-server.js:6:0)
+    at new Promise (<anonymous>)
+    at module.exports../src/entry-server.js.module.exports (src/entry-server.js:5:0)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9391:15
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9353:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/server.js:88:33)
+    at renderDev (/Users/jack/code/myweb/vue-ssr-demo/server.js:102:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-17T20:03:26.694] [ERROR] cheese - TypeError: createApp is not a function
+    at Promise (src/entry-server.js:6:0)
+    at new Promise (<anonymous>)
+    at module.exports../src/entry-server.js.module.exports (src/entry-server.js:5:0)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9391:15
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9353:14
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9529:9)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/server.js:88:33)
+    at renderDev (/Users/jack/code/myweb/vue-ssr-demo/server.js:102:12)
+    at <anonymous>
+[2019-06-17T20:04:10.948] [ERROR] cheese - Error: render function or template not defined in component: anonymous
+    at normalizeRender (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8247:13)
+    at renderComponentInner (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8397:3)
+    at renderComponent (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8368:5)
+    at renderNode (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8279:5)
+    at resolve (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8641:7)
+    at waitForServerPrefetch (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8272:3)
+    at render (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8643:5)
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9168:9)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)

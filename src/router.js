@@ -14,6 +14,10 @@ exports.createRouter = () => {
       {
         path: "/foo",
         component: Foo
+      },
+      {
+        path: "/bar",
+        component: () => import('./pages/bar.vue')
       }
     ]
   });

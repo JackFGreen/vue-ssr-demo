@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
 const merge = require("webpack-merge");
 const baseConfig = require("./webpack.base.config");
 const VueSSRClientPlugin = require("vue-server-renderer/client-plugin");
@@ -9,7 +8,6 @@ function resolve(...arg) {
 }
 
 module.exports = merge(baseConfig, {
-  mode: "production",
   entry: {
     app: resolve("../src/entry-client.js")
   },
@@ -22,8 +20,6 @@ module.exports = merge(baseConfig, {
           chunks: "all"
         }
       }
-      // name: "manifest",
-      // minChunks: Infinity
     }
   },
   plugins: [

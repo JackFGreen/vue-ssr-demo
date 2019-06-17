@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "dev": "cross-env NODE_ENV=development supervisor src/server.js",
-    "start": "cross-env NODE_ENV=production supervisor src/server.js",
+    "dev": "cross-env NODE_ENV=development supervisor server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
     "build": "rm -rf dist && yarn build:client && yarn build:server",
-    "build:client": "webpack --config build/webpack.client.config.js",
-    "build:server": "webpack --config build/webpack.server.config.js"
+    "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.config.js",
+    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.config.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -19,11 +19,32 @@
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
     "chokidar": "^3.0.1",
     "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "file-loader": "^4.0.0",
     "koa-webpack-dev-middleware": "^2.0.2",
     "koa-webpack-hot-middleware": "^1.0.3",
     "memory-fs": "^0.4.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "url-loader": "^2.0.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-middleware": "^3.7.0",

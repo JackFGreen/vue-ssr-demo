@@ -2,6 +2,8 @@ const Vue = require("vue");
 const { createRouter } = require("./router");
 const { createStore } = require("./store");
 const { sync } = require("vuex-router-sync");
+// const App = require('./App.vue')
+// import App from './App.vue'
 
 exports.createApp = (context = {}) => {
   const router = createRouter();
@@ -12,22 +14,19 @@ exports.createApp = (context = {}) => {
   const app = new Vue({
     router,
     store,
-    data () {
+    data() {
       return {
         url: context.url || router.currentRoute.path
-      }
+      };
     },
+    // render: h => h(App)
     render(h) {
-      const routerView = h("router-view");
-
       return h(
         "div",
         {
-          attrs: {
-            id: "app"
-          }
+          id: "app"
         },
-        [`访问的 URL 是： ${this.url}`, routerView]
+        [`访问的 URL 是： ${this.url}`, h("routerView")]
       );
     }
   });
