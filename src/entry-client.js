@@ -1,4 +1,4 @@
-const { createApp } = require("./app");
+import { createApp } from "./app";
 
 const { app, router, store } = createApp();
 console.log("entry-client");

@@ -9,8 +9,9 @@
 export default {
   name: "App",
   data() {
+    const url = this.$route.path
     return {
-      url: 'url'
+      url
     };
   }
 };

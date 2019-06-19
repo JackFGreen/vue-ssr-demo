@@ -1,11 +1,10 @@
-const Vue = require("vue");
-const { createRouter } = require("./router");
-const { createStore } = require("./store");
-const { sync } = require("vuex-router-sync");
-// const App = require('./App.vue')
-// import App from './App.vue'
+import Vue from "vue";
+import { createRouter } from "./router";
+import { createStore } from "./store";
+import { sync } from "vuex-router-sync";
+import App from './App.vue'
 
-exports.createApp = (context = {}) => {
+export function createApp(context = {}) {
   const router = createRouter();
   const store = createStore();
 
@@ -14,21 +13,7 @@ exports.createApp = (context = {}) => {
   const app = new Vue({
     router,
     store,
-    data() {
-      return {
-        url: context.url || router.currentRoute.path
-      };
-    },
-    // render: h => h(App)
-    render(h) {
-      return h(
-        "div",
-        {
-          id: "app"
-        },
-        [`访问的 URL 是： ${this.url}`, h("routerView")]
-      );
-    }
+    render: h => h(App)
   });
   return { app, router, store };
-};
+}

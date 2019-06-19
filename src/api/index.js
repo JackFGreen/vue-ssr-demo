@@ -1,5 +1,5 @@
-const axios = require("axios");
+import axios from "axios";
 
-exports.getList = () => {
+export function getList() {
   return axios.get("http://localhost:3000/public/country.json");
-};
+}

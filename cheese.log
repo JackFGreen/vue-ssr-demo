@@ -588,3 +588,27 @@
     at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:9534:22
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-06-19T18:28:18.046] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.04a5927e4528cf4cb026.js:1:2101
+    at v (main.04a5927e4528cf4cb026.js:1:2615)
+    at h (main.04a5927e4528cf4cb026.js:1:2921)
+    at main.04a5927e4528cf4cb026.js:1:3593
+    at new Promise (<anonymous>)
+    at e.default (main.04a5927e4528cf4cb026.js:1:3561)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78634
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78106
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81641)
+[2019-06-19T18:28:34.210] [ERROR] cheese - ReferenceError: regeneratorRuntime is not defined
+    at main.04a5927e4528cf4cb026.js:1:2101
+    at v (main.04a5927e4528cf4cb026.js:1:2615)
+    at h (main.04a5927e4528cf4cb026.js:1:2921)
+    at main.04a5927e4528cf4cb026.js:1:3593
+    at new Promise (<anonymous>)
+    at e.default (main.04a5927e4528cf4cb026.js:1:3561)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78634
+    at new Promise (<anonymous>)
+    at /Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:78106
+    at Object.renderToString (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.prod.js:1:81641)
+[2019-06-19T18:35:26.581] [ERROR] cheese - { code: 404 }
+[2019-06-19T18:35:27.139] [ERROR] cheese - { code: 404 }

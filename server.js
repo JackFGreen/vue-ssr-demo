@@ -10,8 +10,8 @@ const {
   CODE_SERVER_ERROR,
   CODE_NOTFOUND_RESPONSE,
   CODE_SERVER_ERROR_RESPONSE
-} = require("./src/constant/code");
-const logger = require("./src/tools/logger");
+} = require("./constant/code");
+const logger = require("./tools/logger");
 
 const server = new Koa();
 const isProd = process.env.NODE_ENV === "production";

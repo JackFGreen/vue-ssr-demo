@@ -1,9 +1,9 @@
-module.exports = {
+export default {
   asyncData({ store, route }) {
     return store.dispatch("getList");
   },
-  data () {
-    return {}
+  data() {
+    return {};
   },
   computed: {
     list() {
@@ -11,13 +11,13 @@ module.exports = {
     }
   },
   render(h) {
-    const tag = 'div'
+    const tag = "div";
     const data = {
-      class: 'page-foo'
-    }
+      class: "page-foo"
+    };
     const children = this.list.map(el => {
-      return h('p', el.zh_name)
-    })
-    return h(tag, data, children);
+      return h("p", el.zh_name);
+    });
+    return h(tag, data, ["render from h() function", children]);
   }
 };

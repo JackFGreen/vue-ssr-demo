@@ -1,11 +1,10 @@
-const Vue = require("vue");
-const Vuex = require("vuex");
+import Vue from "vue";
+import Vuex from "vuex";
+import { getList } from "./api";
 
 Vue.use(Vuex);
 
-const { getList } = require("./api");
-
-exports.createStore = () => {
+export function createStore() {
   return new Vuex.Store({
     state: {
       list: []
@@ -13,15 +12,15 @@ exports.createStore = () => {
     actions: {
       async getList({ commit }) {
         const resp = await getList();
-        const res = resp.data
+        const res = resp.data;
         commit("setList", res);
       }
     },
     mutations: {
       setList(state, payload) {
-        const data = payload
-        state.list = data
+        const data = payload;
+        state.list = data;
       }
     }
   });
-};
+}

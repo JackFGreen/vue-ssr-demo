@@ -1,7 +1,7 @@
-const { createApp } = require("./app");
-const { CODE_NOTFOUND } = require("./constant/code");
+import { createApp } from "./app";
+import { CODE_NOTFOUND } from "./constant/code";
 
-module.exports = (context = {}) => {
+export default function(context = {}) {
   return new Promise((resolve, reject) => {
     const { app, router, store } = createApp(context);
 
@@ -33,13 +33,13 @@ module.exports = (context = {}) => {
         );
 
         // window.__INITIAL_STATE__
-        context.state = store.state
+        context.state = store.state;
 
         // match => render app
         resolve(app);
       } catch (err) {
-        reject(err)
+        reject(err);
       }
     }, reject);
   });
-};
+}
