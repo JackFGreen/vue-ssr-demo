@@ -1,26 +1,26 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Foo from "./pages/foo";
+import Vue from 'vue'
+import Router from 'vue-router'
+import Foo from './pages/foo'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export const routes = [
   {
-    path: "/"
+    path: '/'
   },
   {
-    path: "/foo",
+    path: '/foo',
     component: Foo
   },
   {
-    path: "/bar",
-    component: () => import("./pages/bar.vue")
+    path: '/bar',
+    component: () => import('./pages/bar.vue')
   }
 ]
 
-export function createRouter() {
+export function createRouter () {
   return new Router({
-    mode: "history",
+    mode: 'history',
     routes
-  });
+  })
 }

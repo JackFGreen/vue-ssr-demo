@@ -7,8 +7,8 @@ const chokidar = require('chokidar')
 const clientConfig = require('./webpack.client.config')
 const serverConfig = require('./webpack.server.config')
 // koa use
-const webpackDevMiddleware = require("koa-webpack-dev-middleware");
-const webpackHotMiddleware = require("koa-webpack-hot-middleware");
+const webpackDevMiddleware = require('koa-webpack-dev-middleware')
+const webpackHotMiddleware = require('koa-webpack-hot-middleware')
 
 const readFile = (fs, file) => {
   try {
@@ -22,7 +22,9 @@ module.exports = function setupDevServer (app, templatePath, cb) {
   let clientManifest
 
   let ready
-  const readyPromise = new Promise(r => { ready = r })
+  const readyPromise = new Promise(resolve => {
+    ready = resolve
+  })
   const update = () => {
     if (bundle && clientManifest) {
       ready()
@@ -61,10 +63,7 @@ module.exports = function setupDevServer (app, templatePath, cb) {
     stats.errors.forEach(err => console.error(err))
     stats.warnings.forEach(err => console.warn(err))
     if (stats.errors.length) return
-    clientManifest = JSON.parse(readFile(
-      devMiddleware.fileSystem,
-      'vue-ssr-client-manifest.json'
-    ))
+    clientManifest = JSON.parse(readFile(devMiddleware.fileSystem, 'vue-ssr-client-manifest.json'))
     update()
   })
 

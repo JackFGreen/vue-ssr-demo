@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "bar",
-  data() {
-    return {};
+  name: 'bar',
+  data () {
+    return {}
   },
-  render() {
-    return <div class="page-bar">render form jsx</div>;
+  render () {
+    return <div class='page-bar'>render form jsx</div>
   }
-};
+}
 </script>
