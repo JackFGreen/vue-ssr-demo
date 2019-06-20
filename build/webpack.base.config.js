@@ -39,6 +39,7 @@ module.exports = {
     filename: `js/[name].[chunkhash:${hashLen}].js`
   },
   resolve: {
+    extensions: ['.mjs', '.js', '.jsx', '.vue', '.json', '.wasm'],
     alias: {
       vue$: 'vue/dist/vue.runtime.min.js',
       'vue-router': 'vue-router/dist/vue-router.min.js'

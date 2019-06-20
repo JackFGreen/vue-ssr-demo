@@ -7,7 +7,7 @@ function loadView (view) {
   return () =>
     import(
       /* webpackChunkName: "[request]" */
-      `./views/${view}.vue`
+      `./views/${view}`
     )
 }
 

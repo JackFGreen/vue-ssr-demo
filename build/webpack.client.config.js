@@ -26,9 +26,5 @@ module.exports = merge(baseConfig, {
     },
     minimizer: [new OptimizeCSSPlugin(), new UglifyJsPlugin()]
   },
-  plugins: [
-    new VueSSRClientPlugin(),
-    new webpack.HashedModuleIdsPlugin(),
-    new webpack.optimize.ModuleConcatenationPlugin()
-  ]
+  plugins: [new VueSSRClientPlugin(), new webpack.HashedModuleIdsPlugin()]
 })
