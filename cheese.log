@@ -716,3 +716,5 @@
     at RenderContext.next (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2598:23)
     at cachedWrite (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:2451:9)
     at renderElement (/Users/jack/code/myweb/vue-ssr-demo/node_modules/vue-server-renderer/build.dev.js:8529:5)
+[2019-06-20T12:15:45.426] [ERROR] cheese - { code: 404 }
+[2019-06-20T12:16:44.702] [ERROR] cheese - { code: 404 }
