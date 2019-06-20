@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const Koa = require("koa");
 const koaStatic = require("koa-static");
+const cors = require('@koa/cors');
 const favicon = require("koa-favicon");
 const { createBundleRenderer } = require("vue-server-renderer");
 
@@ -105,6 +106,7 @@ async function renderDev(ctx) {
 }
 
 // render app
+server.use(cors());
 server.use(koaStatic(resolve("./")));
 server.use(favicon(resolve("./public/logo-48.png")));
 
