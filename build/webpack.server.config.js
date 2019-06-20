@@ -10,7 +10,6 @@ function resolve (...arg) {
 
 module.exports = merge(baseConfig, {
   target: 'node',
-  // devtool: "#source-map",
   entry: resolve('../src/entry-server.js'),
   output: {
     libraryTarget: 'commonjs2'

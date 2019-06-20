@@ -99,8 +99,9 @@ async function renderDev (ctx) {
 
 // render app
 server.use(cors())
-server.use(koaStatic(resolve('./')))
-server.use(favicon(resolve('./public/logo-48.png')))
+server.use(koaStatic(resolve('./dist')))
+server.use(koaStatic(resolve('./src/static')))
+server.use(favicon(resolve('./src/assets/logo-48.png')))
 
 server.use(isProd ? render : renderDev)
 

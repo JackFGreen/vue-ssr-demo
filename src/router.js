@@ -1,8 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Foo from './pages/foo'
 
 Vue.use(Router)
+
+function loadView (view) {
+  return () =>
+    import(
+      /* webpackChunkName: "[request]" */
+      `./views/${view}.vue`
+    )
+}
 
 export const routes = [
   {
@@ -10,11 +17,11 @@ export const routes = [
   },
   {
     path: '/foo',
-    component: Foo
+    component: loadView('foo')
   },
   {
     path: '/bar',
-    component: () => import('./pages/bar.vue')
+    component: loadView('bar')
   }
 ]
 

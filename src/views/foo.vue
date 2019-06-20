@@ -1,3 +1,4 @@
+<script>
 export default {
   asyncData ({ store, route }) {
     return store.dispatch('getList')
@@ -21,3 +22,4 @@ export default {
     return h(tag, data, ['render from h() function', children])
   }
 }
+</script>
