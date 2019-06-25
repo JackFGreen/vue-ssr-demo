@@ -17,5 +17,22 @@ module.exports = merge(baseConfig, {
   externals: nodeExternals({
     whitelist: /\.css$/
   }),
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'null-loader',
+          'postcss-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              indentedSyntax: false
+            }
+          }
+        ]
+      }
+    ]
+  },
   plugins: [new VueSSRServerPlugin()]
 })

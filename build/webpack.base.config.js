@@ -12,6 +12,7 @@ function resolve (...arg) {
 }
 
 const isProd = process.env.NODE_ENV === 'production'
+
 const limitSize = 4096
 const hashLen = 8
 
@@ -30,7 +31,7 @@ function generateFileLoader (dir) {
   }
 }
 
-module.exports = {
+const config = {
   mode: process.env.NODE_ENV,
   devtool: isProd ? false : '#cheap-module-source-map',
   output: {
@@ -61,19 +62,6 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          process.env.NODE_ENV !== 'production' ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              indentedSyntax: false
-            }
-          }
-        ]
       },
       {
         test: /\.(svg)(\?.*)?$/,
@@ -118,3 +106,5 @@ module.exports = {
     })
   ]
 }
+
+module.exports = config

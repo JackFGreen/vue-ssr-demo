@@ -23,3 +23,8 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.page-foo {
+  color: grey;
+}
+</style>

@@ -31,6 +31,7 @@ export default {
 <style lang="scss">
 #app {
   .router-link {
+    display: flex;
     padding: 0 10px;
   }
 }

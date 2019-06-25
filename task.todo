@@ -2,8 +2,8 @@
 ✔ .scss @done (6/19/2019, 6:52:10 PM)
 ✔ jsx @done (6/19/2019, 6:52:11 PM)
 ☐ cache
-☐ build config
+✔ build config @done (6/21/2019, 3:59:32 PM)
 ✔ compatible browser @done (6/19/2019, 6:52:16 PM)
 ✔ lint @done (6/20/2019, 4:43:14 PM)
-☐ dist file name
-☐ prod
+✔ dist file name @done (6/21/2019, 3:59:40 PM)
+☐ prod pm2

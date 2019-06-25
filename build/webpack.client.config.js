@@ -5,10 +5,14 @@ const baseConfig = require('./webpack.base.config')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 function resolve (...arg) {
   return path.resolve(__dirname, ...arg)
 }
+
+const isProd = process.env.NODE_ENV === 'production'
+const hashLen = 8
 
 module.exports = merge(baseConfig, {
   entry: {
@@ -17,7 +21,7 @@ module.exports = merge(baseConfig, {
   optimization: {
     splitChunks: {
       cacheGroups: {
-        commons: {
+        vendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
           chunks: 'all'
@@ -26,5 +30,29 @@ module.exports = merge(baseConfig, {
     },
     minimizer: [new OptimizeCSSPlugin(), new UglifyJsPlugin()]
   },
-  plugins: [new VueSSRClientPlugin(), new webpack.HashedModuleIdsPlugin()]
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          isProd ? MiniCssExtractPlugin.loader : 'vue-style-loader',
+          'css-loader',
+          'postcss-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              indentedSyntax: false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  plugins: [
+    new VueSSRClientPlugin(),
+    new webpack.HashedModuleIdsPlugin(),
+    new MiniCssExtractPlugin({
+      filename: `css/[name].[contenthash:${hashLen}].css`
+    })
+  ]
 })
