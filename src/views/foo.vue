@@ -1,5 +1,14 @@
 <script>
+import head from '../mixin/head'
+
 export default {
+  name: 'foo',
+  mixins: [head],
+  head () {
+    return {
+      title: 'foo'
+    }
+  },
   asyncData ({ store, route }) {
     return store.dispatch('getList')
   },

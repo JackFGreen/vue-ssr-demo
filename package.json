@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "cross-env NODE_ENV=development supervisor server.js",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "start": "pm2 start ecosystem.config.js --env production",
     "prod": "yarn build && yarn start",
     "build": "rm -rf dist && yarn build:client && yarn build:server",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.config.js",
@@ -10,15 +10,19 @@
     "lint": "eslint './**/*.{js,vue}'",
     "fix": "eslint './**/*.{js,vue}' --fix",
     "format": "yarn prettier && yarn fix && yarn lint",
+    "jsdoc": "jsdoc -c jsdoc.conf.js",
     "commit": "npx git cz"
   },
   "dependencies": {
     "@koa/cors": "2",
     "axios": "^0.19.0",
+    "global": "^4.4.0",
+    "jsdoc": "^3.6.2",
     "koa": "^2.7.0",
     "koa-favicon": "^2.0.1",
     "koa-static": "^5.0.0",
     "log4js": "^4.3.1",
+    "lru-cache": "^5.1.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
     "vue-server-renderer": "^2.6.10",

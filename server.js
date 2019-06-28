@@ -6,6 +6,15 @@ const cors = require('@koa/cors')
 const favicon = require('koa-favicon')
 const { createBundleRenderer } = require('vue-server-renderer')
 
+const LRU = require('lru-cache')
+const microCache = new LRU({
+  max: 100,
+  maxAge: 1000
+})
+function isCacheable (ctx) {
+  return true
+}
+
 const {
   CODE_NOTFOUND,
   CODE_SERVER_ERROR,
@@ -54,6 +63,17 @@ if (isProd) {
 // process render
 async function render (ctx) {
   const s = Date.now()
+  const cacheable = isCacheable(ctx)
+  if (cacheable) {
+    const hit = microCache.get(ctx.url)
+    if (hit) {
+      ctx.body = hit
+      if (!isProd) {
+        console.log(`whole request: ${Date.now() - s}ms`)
+      }
+      return
+    }
+  }
 
   function handleError (err) {
     console.log('')
@@ -83,6 +103,9 @@ async function render (ctx) {
   try {
     const html = await renderer.renderToString(context)
     ctx.body = html
+    if (cacheable) {
+      microCache.set(ctx.url, html)
+    }
     if (!isProd) {
       console.log(`whole request: ${Date.now() - s}ms`)
     }

@@ -1,14 +1,12 @@
 import { createApp } from './app'
 
 const { app, router, store } = createApp()
-console.log('entry-client')
 
 if (window.__INITIAL_STATE__) {
   store.replaceState(window.__INITIAL_STATE__)
 }
 
 router.onReady(() => {
-  console.log('router.onReady')
   router.beforeResolve(async (to, from, next) => {
     const matched = router.getMatchedComponents(to)
     const prevMatched = router.getMatchedComponents(from)
