@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const ajax = axios.create({ baseURL: 'http://localhost:3000' })
+const ajax = axios.create()
 
 export function getList () {
-  return ajax.get('/country.json')
+  return ajax.get('/country.json', { proxy: { host: '127.0.0.1', port: 3000 } })
 }
