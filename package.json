@@ -60,6 +60,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "file-loader": "^4.0.0",
     "husky": "^2.4.1",
+    "image-webpack-loader": "^5.0.0",
     "koa-webpack-dev-middleware": "^2.0.2",
     "koa-webpack-hot-middleware": "^1.0.3",
     "memory-fs": "^0.4.1",

@@ -5,7 +5,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const chalk = require('chalk')
-// const merge = require('webpack-merge')
+const merge = require('webpack-merge')
 
 function resolve (...arg) {
   return path.resolve(__dirname, ...arg)
@@ -34,45 +34,45 @@ function generateFileLoader (dir) {
 // svg-sprite-loader directory
 const svgDir = '../src/assets/img/svg'
 
-// const svgoConfig = {
-//   plugins: [
-//     {
-//       removeTitle: true
-//     }
-//   ]
-// }
+const svgoConfig = {
+  plugins: [
+    {
+      removeTitle: true
+    }
+  ]
+}
 
-// const svgSpriteConfig = merge(svgoConfig, {
-//   plugins: [
-//     {
-//       removeAttrs: {
-//         attrs: '(stroke|fill)'
-//       }
-//     }
-//   ]
-// })
+const svgSpriteConfig = merge(svgoConfig, {
+  plugins: [
+    {
+      removeAttrs: {
+        attrs: '(stroke|fill)'
+      }
+    }
+  ]
+})
 
-// function generateImgWbLoader () {
-//   return {
-//     loader: 'image-webpack-loader',
-//     options: {
-//       svgo: svgoConfig,
-//       mozjpeg: {
-//         progressive: true,
-//         quality: 65
-//       },
-//       pngquant: {
-//         quality: '65-90',
-//         speed: 4
-//       },
-//       gifsicle: {
-//         interlaced: true,
-//         colors: 64,
-//         optimizationLevel: 3
-//       }
-//     }
-//   }
-// }
+function generateImgWbLoader () {
+  return {
+    loader: 'image-webpack-loader',
+    options: {
+      svgo: svgoConfig,
+      mozjpeg: {
+        progressive: true,
+        quality: 65
+      },
+      pngquant: {
+        quality: '65-90',
+        speed: 4
+      },
+      gifsicle: {
+        interlaced: true,
+        colors: 64,
+        optimizationLevel: 3
+      }
+    }
+  }
+}
 
 const config = {
   mode: process.env.NODE_ENV,
@@ -112,13 +112,20 @@ const config = {
         use: [
           {
             loader: 'svg-sprite-loader'
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              // https://github.com/svg/svgo#what-it-can-do
+              svgo: svgSpriteConfig
+            }
           }
         ]
       },
       {
         test: /\.(png|jpe?g|gif|webp|svg)(\?.*)?$/,
         exclude: [resolve(svgDir)],
-        use: [generateFileLoader('img')]
+        use: [generateFileLoader('img'), generateImgWbLoader()]
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
