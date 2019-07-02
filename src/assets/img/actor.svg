@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="45px" viewBox="0 0 46 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 65</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3788F1" offset="0%"></stop>
+            <stop stop-color="#1E44D1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#3787F1" offset="0%"></stop>
+            <stop stop-color="#2B67E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="6.52752656%" x2="50%" y2="93.3110343%" id="linearGradient-3">
+            <stop stop-color="#30B0F2" offset="0%"></stop>
+            <stop stop-color="#3788F1" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="21.3333333" height="29.16" rx="10.6666667"></rect>
+        <linearGradient x1="76.1724031%" y1="57.8543146%" x2="50%" y2="106.436181%" id="linearGradient-6">
+            <stop stop-color="#30B0F2" offset="0%"></stop>
+            <stop stop-color="#339EF1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC002" transform="translate(-437.000000, -1570.000000)">
+            <g id="Group-48" transform="translate(360.000000, 1492.000000)">
+                <g id="Group-65" transform="translate(79.000000, 78.000000)">
+                    <g id="Group-40" transform="translate(0.200000, 0.400000)">
+                        <g id="Group-38">
+                            <path d="M15.4083665,27.4276029 C6.53458005,28.8407759 5.1532219e-16,33.4518715 0,36.6325288 C0,40.4295292 9.3124772,42.7221602 20.8,42.7221602 C32.2875228,42.7221602 41.6,40.4295292 41.6,36.6325288 C41.6,33.4171805 34.9220989,28.7400205 25.9004484,27.3825102" id="Oval-5" stroke="url(#linearGradient-1)" stroke-width="3" fill-rule="nonzero"></path>
+                            <path d="M16.5200618,27.5480548 C16.1875037,28.3561544 16,29.2709798 16,30.24 C16,33.5205714 18.1490332,36.18 20.8,36.18 C23.4509668,36.18 25.6,33.5205714 25.6,30.24 C25.6,29.1051772 25.3428419,28.0446817 24.8967054,27.142886" id="Oval-2" stroke="url(#linearGradient-2)" stroke-width="3" fill-rule="nonzero"></path>
+                            <g id="Group-39" transform="translate(9.600000, 0.000000)">
+                                <mask id="mask-5" fill="white">
+                                    <use xlink:href="#path-4"></use>
+                                </mask>
+                                <rect stroke="url(#linearGradient-3)" stroke-width="3" x="1.5" y="1.5" width="18.3333333" height="26.16" rx="9.16666667"></rect>
+                                <ellipse id="Oval-6" stroke="url(#linearGradient-6)" stroke-width="3" fill-rule="nonzero" mask="url(#mask-5)" transform="translate(7.367671, 3.587392) rotate(-31.000000) translate(-7.367671, -3.587392) " cx="7.36767099" cy="3.58739198" rx="10.1333333" ry="9.99"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

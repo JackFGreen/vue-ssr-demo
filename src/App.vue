@@ -1,10 +1,18 @@
 <template>
   <div id="app">
+    <img src="./assets/img/logo-48.png" alt>
+    <img src="./assets/img/actor.svg" alt>
+    <svg class="icon-svg">
+      <use xlink:href="#account"></use>
+    </svg>
+
     访问的 URL 是： {{ url }}
-    <router-link class="router-link" v-for="(item, index) in routes" :key="index" :to="item.path">{{
+    <router-link class="router-link" v-for="(item, index) in routes" :key="index" :to="item.path">
+      {{
       item.path.slice(1)
-    }}</router-link>
-    <routerView />
+      }}
+    </router-link>
+    <routerView/>
   </div>
 </template>
 
@@ -30,9 +38,17 @@ export default {
 
 <style lang="scss">
 #app {
+  background: url('./assets/img/1.jpg') no-repeat center;
+
   .router-link {
     display: flex;
     padding: 0 10px;
+  }
+
+  .icon-svg {
+    width: 16px;
+    height: 16px;
+    fill: red;
   }
 }
 </style>

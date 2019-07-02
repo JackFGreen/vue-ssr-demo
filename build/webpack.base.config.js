@@ -5,6 +5,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const chalk = require('chalk')
+const merge = require('webpack-merge')
 
 function resolve (...arg) {
   return path.resolve(__dirname, ...arg)
@@ -29,6 +30,48 @@ function generateFileLoader (dir) {
     }
   }
 }
+
+function generateImgWbLoader () {
+  return {
+    loader: 'image-webpack-loader',
+    options: {
+      svgo: svgoConfig,
+      mozjpeg: {
+        progressive: true,
+        quality: 65
+      },
+      pngquant: {
+        quality: '65-90',
+        speed: 4
+      },
+      gifsicle: {
+        interlaced: true,
+        colors: 64,
+        optimizationLevel: 3
+      }
+    }
+  }
+}
+
+// svg-sprite-loader directory
+const svgDir = '../src/assets/img/svg'
+
+const svgoConfig = {
+  plugins: [
+    {
+      removeTitle: true
+    }
+  ]
+}
+const svgSpriteConfig = merge(svgoConfig, {
+  plugins: [
+    {
+      removeAttrs: {
+        attrs: '(stroke|fill)'
+      }
+    }
+  ]
+})
 
 const config = {
   mode: process.env.NODE_ENV,
@@ -63,19 +106,25 @@ const config = {
         loader: 'vue-loader'
       },
       {
-        test: /\.(svg)(\?.*)?$/,
+        test: /\.svg$/,
+        include: [resolve(svgDir)],
         use: [
           {
-            loader: 'file-loader',
+            loader: 'svg-sprite-loader'
+          },
+          {
+            loader: 'image-webpack-loader',
             options: {
-              name: 'img/[name].[hash:8].[ext]'
+              // https://github.com/svg/svgo#what-it-can-do
+              svgo: svgSpriteConfig
             }
           }
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
-        use: [generateFileLoader('img')]
+        test: /\.(png|jpe?g|gif|webp|svg)(\?.*)?$/,
+        exclude: [resolve(svgDir)],
+        use: [generateFileLoader('img'), generateImgWbLoader()]
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,

@@ -8,6 +8,10 @@ export function createApp (context = {}) {
   const router = createRouter()
   const store = createStore()
 
+  // import all svg
+  const svgs = require.context('./assets/img/svg', false, /\.svg$/)
+  svgs.keys().forEach(svgs)
+
   sync(store, router)
 
   const app = new Vue({
