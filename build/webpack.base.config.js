@@ -106,6 +106,12 @@ const config = {
         test: /\.vue$/,
         loader: 'vue-loader'
       },
+      // i18n
+      {
+        resourceQuery: /blockType=i18n/,
+        type: 'javascript/auto',
+        loader: '@kazupon/vue-i18n-loader'
+      },
       {
         test: /\.svg$/,
         include: [resolve(svgDir)],
