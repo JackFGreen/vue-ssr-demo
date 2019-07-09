@@ -5,8 +5,11 @@ const koaStatic = require('koa-static')
 const cors = require('@koa/cors')
 const favicon = require('koa-favicon')
 const { createBundleRenderer } = require('vue-server-renderer')
-
 const LRU = require('lru-cache')
+
+const renderTime = require('./middleware/renderTime')
+const logger = require('./tools/logger')
+
 const microCache = new LRU({
   max: 100,
   maxAge: 1000
@@ -21,7 +24,6 @@ const {
   CODE_NOTFOUND_RESPONSE,
   CODE_SERVER_ERROR_RESPONSE
 } = require('./constant/code')
-const logger = require('./tools/logger')
 
 const server = new Koa()
 const isProd = process.env.NODE_ENV === 'production'
@@ -62,22 +64,16 @@ if (isProd) {
 
 // process render
 async function render (ctx) {
-  const s = Date.now()
   const cacheable = isCacheable(ctx)
   if (cacheable) {
     const hit = microCache.get(ctx.url)
     if (hit) {
       ctx.body = hit
-      if (!isProd) {
-        console.log(`whole request: ${Date.now() - s}ms`)
-      }
-      return
+      return true
     }
   }
 
   function handleError (err) {
-    console.log('')
-    console.log(err)
     if (err.url) {
       ctx.redirect(err.url)
     } else if (err.code === CODE_NOTFOUND) {
@@ -86,9 +82,9 @@ async function render (ctx) {
     } else {
       ctx.status = CODE_SERVER_ERROR
       ctx.body = CODE_SERVER_ERROR_RESPONSE
-      console.error(`error during render : ${ctx.url}`)
+      logger.render.error(`[render error] [${ctx.url}]`)
     }
-    logger.error(err)
+    logger.app.error(err)
   }
 
   const context = {
@@ -105,9 +101,6 @@ async function render (ctx) {
     ctx.body = html
     if (cacheable) {
       microCache.set(ctx.url, html)
-    }
-    if (!isProd) {
-      console.log(`whole request: ${Date.now() - s}ms`)
     }
   } catch (err) {
     handleError(err)
@@ -126,6 +119,7 @@ server.use(koaStatic(resolve('./dist')))
 server.use(koaStatic(resolve('./src/static')))
 server.use(favicon(resolve('./src/assets/img/logo-48.png')))
 
+server.use(renderTime())
 server.use(isProd ? render : renderDev)
 
 const port = 3000

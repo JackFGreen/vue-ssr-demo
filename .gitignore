@@ -18,4 +18,4 @@ selenium-debug.log
 # custom
 .tmp
 dist/
-cheese.log
+logs/

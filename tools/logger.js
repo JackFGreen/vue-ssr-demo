@@ -1,9 +1,47 @@
 const log4js = require('log4js')
-log4js.configure({
-  appenders: { cheese: { type: 'file', filename: 'cheese.log' } },
-  categories: { default: { appenders: ['cheese'], level: 'error' } }
+
+const config = {
+  level: 'all'
+}
+
+const appenders = {
+  stdout: {
+    type: 'stdout'
+  }
+}
+
+const categories = {
+  default: {
+    appenders: ['stdout'],
+    level: config.level
+  }
+}
+
+const categoryFiles = ['render', 'app']
+categoryFiles.forEach(name => {
+  appenders[name] = {
+    type: 'dateFile',
+    level: 'all',
+    filename: 'logs/' + name,
+    pattern: 'yyyy-MM-dd.log',
+    alwaysIncludePattern: true
+  }
+
+  categories[name] = {
+    appenders: [name],
+    level: config.level
+  }
 })
 
-const logger = log4js.getLogger('cheese')
+log4js.configure({
+  appenders,
+  categories
+})
+
+const logger = {}
+
+categoryFiles.forEach(name => {
+  logger[name] = log4js.getLogger(name)
+})
 
 module.exports = logger
