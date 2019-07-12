@@ -6,6 +6,7 @@ const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { assetPath } = require('./utlis')
 
 function resolve (...arg) {
   return path.resolve(__dirname, ...arg)
@@ -56,7 +57,7 @@ module.exports = merge(baseConfig, {
     new VueSSRClientPlugin(),
     new webpack.HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin({
-      filename: `css/[name].[contenthash:${hashLen}].css`
+      filename: `${assetPath('css')}/[name].[contenthash:${hashLen}].css`
     })
   ]
 })

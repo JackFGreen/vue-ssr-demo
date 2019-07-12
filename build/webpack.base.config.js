@@ -6,6 +6,7 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const chalk = require('chalk')
 const merge = require('webpack-merge')
+const { assetPath } = require('./utlis')
 
 function resolve (...arg) {
   return path.resolve(__dirname, ...arg)
@@ -24,7 +25,7 @@ function generateFileLoader (dir) {
       fallback: {
         loader: 'file-loader',
         options: {
-          name: `${dir}/[name].[hash:${hashLen}].[ext]`
+          name: `${assetPath(dir)}/[name].[hash:${hashLen}].[ext]`
         }
       }
     }
@@ -80,7 +81,7 @@ const config = {
   output: {
     path: resolve('../dist'),
     publicPath: '/',
-    filename: `js/[name].[chunkhash:${hashLen}].js`
+    filename: `${assetPath('js')}/[name].[chunkhash:${hashLen}].js`
   },
   resolve: {
     extensions: ['.mjs', '.js', '.jsx', '.vue', '.json', '.wasm'],
@@ -146,7 +147,7 @@ const config = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: `css/[name].[contenthash:${hashLen}].css`
+      filename: `${assetPath('css')}/[name].[contenthash:${hashLen}].css`
     }),
     new StyleLintPlugin({
       files: ['**/*.{vue,htm,html,css,sss,less,scss,sass}']

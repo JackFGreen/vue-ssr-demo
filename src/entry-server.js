@@ -1,5 +1,5 @@
-import { createApp } from './app'
-import { CODE_NOTFOUND } from './constant/code'
+import { createApp } from './client/app'
+import { CODE_NOTFOUND } from './server/constant/code'
 
 export default function (context = {}) {
   return new Promise((resolve, reject) => {

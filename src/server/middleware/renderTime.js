@@ -1,8 +1,8 @@
-const logger = require('../tools/logger')
+import logger from '../tools/logger'
 
 const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = () => async (ctx, next) => {
+export default () => async (ctx, next) => {
   const s = Date.now()
   const isCache = await next()
   if (!isProd) {

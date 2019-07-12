@@ -1,4 +1,4 @@
-const log4js = require('log4js')
+import log4js from 'log4js'
 
 const config = {
   level: 'all'
@@ -44,4 +44,4 @@ categoryFiles.forEach(name => {
   logger[name] = log4js.getLogger(name)
 })
 
-module.exports = logger
+export default logger

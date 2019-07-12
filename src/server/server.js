@@ -1,14 +1,21 @@
-const fs = require('fs')
-const path = require('path')
-const Koa = require('koa')
-const koaStatic = require('koa-static')
-const cors = require('@koa/cors')
-const favicon = require('koa-favicon')
-const { createBundleRenderer } = require('vue-server-renderer')
-const LRU = require('lru-cache')
+import fs from 'fs'
+import path from 'path'
+import Koa from 'koa'
+import koaStatic from 'koa-static'
+import cors from '@koa/cors'
+import favicon from 'koa-favicon'
+import { createBundleRenderer } from 'vue-server-renderer'
+import LRU from 'lru-cache'
 
-const renderTime = require('./middleware/renderTime')
-const logger = require('./tools/logger')
+import renderTime from './middleware/renderTime'
+import logger from './tools/logger'
+
+import {
+  CODE_NOTFOUND,
+  CODE_SERVER_ERROR,
+  CODE_NOTFOUND_RESPONSE,
+  CODE_SERVER_ERROR_RESPONSE
+} from './constant/code'
 
 const microCache = new LRU({
   max: 100,
@@ -17,13 +24,6 @@ const microCache = new LRU({
 function isCacheable (ctx) {
   return true
 }
-
-const {
-  CODE_NOTFOUND,
-  CODE_SERVER_ERROR,
-  CODE_NOTFOUND_RESPONSE,
-  CODE_SERVER_ERROR_RESPONSE
-} = require('./constant/code')
 
 const server = new Koa()
 const isProd = process.env.NODE_ENV === 'production'
@@ -46,18 +46,18 @@ let renderer
 // dev render
 let readyPromise
 
-const templatePath = resolve('./src/index.html')
+const templatePath = resolve('./index.html')
 const template = fs.readFileSync(templatePath, 'utf-8')
 
 if (isProd) {
-  const clientManifest = require('./dist/vue-ssr-client-manifest.json')
-  const serverBundle = require('./dist/vue-ssr-server-bundle.json')
+  const clientManifest = require('../vue-ssr-client-manifest.json')
+  const serverBundle = require('../vue-ssr-server-bundle.json')
   renderer = createRenderer(serverBundle, {
     template,
     clientManifest
   })
 } else {
-  readyPromise = require('./build/setup-dev-server')(server, templatePath, (bundle, options) => {
+  readyPromise = require('../../build/setup-dev-server')(server, templatePath, (bundle, options) => {
     renderer = createRenderer(bundle, options)
   })
 }
@@ -115,9 +115,9 @@ async function renderDev (ctx) {
 
 // render app
 server.use(cors())
-server.use(koaStatic(resolve('./dist')))
-server.use(koaStatic(resolve('./src/static')))
-server.use(favicon(resolve('./src/assets/img/logo-48.png')))
+server.use(koaStatic(resolve('../../dist')))
+server.use(koaStatic(resolve('../static')))
+server.use(favicon(resolve('../static/logo-48.png')))
 
 server.use(renderTime())
 server.use(isProd ? render : renderDev)
