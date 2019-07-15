@@ -33,7 +33,7 @@ function generateFileLoader (dir) {
 }
 
 // svg-sprite-loader directory
-const svgDir = '../src/assets/img/svg'
+const svgDir = resolve(`../src/${assetPath('assets/img/svg')}`)
 
 const svgoConfig = {
   plugins: [

@@ -12,7 +12,7 @@
     "lint": "eslint './**/*.{js,vue}'",
     "fix": "eslint './**/*.{js,vue}' --fix",
     "format": "yarn prettier && yarn fix && yarn lint",
-    "jsdoc": "jsdoc -c jsdoc.conf.js",
+    "docs": "jsdoc -c jsdoc.conf.js",
     "commit": "npx git cz"
   },
   "dependencies": {
