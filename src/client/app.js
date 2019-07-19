@@ -5,6 +5,9 @@ import { sync } from 'vuex-router-sync'
 import App from './App.vue'
 import messages from './messages.json'
 import vueI18n from './vueI18n'
+import headMixin from 'demo-lib/vue/head-mixin'
+
+Vue.use(headMixin)
 
 export function createApp (context = {}) {
   const router = createRouter()
