@@ -4,7 +4,7 @@ const merge = require('webpack-merge')
 const baseConfig = require('./webpack.base.config')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { assetPath } = require('./utlis')
 
@@ -29,7 +29,7 @@ module.exports = merge(baseConfig, {
         }
       }
     },
-    minimizer: [new OptimizeCSSPlugin(), new UglifyJsPlugin()]
+    minimizer: [new OptimizeCSSPlugin()]
   },
   module: {
     rules: [
