@@ -1,9 +1,7 @@
 <script>
-import head from '../mixin/head'
 
 export default {
   name: 'bar',
-  mixins: [head],
   head () {
     return {
       title: 'bar'

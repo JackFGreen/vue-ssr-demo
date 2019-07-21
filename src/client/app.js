@@ -7,7 +7,7 @@ import messages from './messages.json'
 import vueI18n from './vueI18n'
 import headMixin from 'demo-lib/vue/head-mixin'
 
-Vue.use(headMixin)
+Vue.mixin(headMixin)
 
 export function createApp (context = {}) {
   const router = createRouter()
