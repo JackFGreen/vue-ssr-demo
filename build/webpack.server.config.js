@@ -16,7 +16,10 @@ module.exports = merge(baseConfig, {
     libraryTarget: 'commonjs2'
   },
   externals: nodeExternals({
-    whitelist: /\.css$/
+    whitelist: [
+      /\.css$/,
+      /demo-lib/
+    ]
   }),
   module: {
     rules: [

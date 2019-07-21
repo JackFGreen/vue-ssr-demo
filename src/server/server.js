@@ -57,9 +57,13 @@ if (isProd) {
     clientManifest
   })
 } else {
-  readyPromise = require('../../build/setup-dev-server')(server, templatePath, (bundle, options) => {
-    renderer = createRenderer(bundle, options)
-  })
+  readyPromise = require('../../build/setup-dev-server')(
+    server,
+    templatePath,
+    (bundle, options) => {
+      renderer = createRenderer(bundle, options)
+    }
+  )
 }
 
 // process render

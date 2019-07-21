@@ -2,24 +2,29 @@
 <template>
   <div id="app">
     <!-- i18n -->
-    <button v-for="(item, index) in langs" :key="index" @click="$root.$i18n.locale = item">{{item}}</button>
-    {{$t('hello')}}{{$t('world')}}
+    <button
+      v-for="(item, index) in langs"
+      :key="index"
+      @click="$root.$i18n.locale = item"
+    >{{ item }}</button>
 
+    {{ $t('hello') }}{{ $t('world') }}
     <!-- img svg -->
-    <img src="./assets/img/logo-48.png" alt>
-    <img src="./assets/img/actor.svg" alt>
+    <img src="./assets/img/logo-48.png" alt />
+    <img src="./assets/img/actor.svg" alt />
     <svg class="icon-svg">
-      <use xlink:href="#account"></use>
+      <use xlink:href="#account" />
     </svg>
 
     <!-- router -->
     访问的 URL 是： {{ url }}
-    <router-link class="router-link" v-for="(item, index) in routes" :key="index" :to="item.path">
-      {{
-      item.path.slice(1)
-      }}
-    </router-link>
-    <routerView/>
+    <router-link
+      class="router-link"
+      v-for="(item, index) in routes"
+      :key="index"
+      :to="item.path"
+    >{{ item.path.slice(1) }}</router-link>
+    <routerView />
   </div>
 </template>
 
@@ -33,10 +38,7 @@ export default {
     return {
       routes: routes.slice(1),
       url,
-      langs: [
-        'zh-CN',
-        'en-US'
-      ]
+      langs: ['zh-CN', 'en-US']
     }
   },
   watch: {

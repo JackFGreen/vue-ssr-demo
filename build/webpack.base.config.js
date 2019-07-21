@@ -101,11 +101,7 @@ const config = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        include: [
-          resolve('../src'),
-          resolve('../node_modules/demo-lib')
-        ]
-        // exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file)
+        include: [resolve('../src'), resolve('../node_modules/demo-lib')]
       },
       {
         test: /\.vue$/,
